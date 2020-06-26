@@ -10,8 +10,6 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Grid from '@material-ui/core/Grid';
 import { useCoverCardMediaStyles } from '@mui-treasury/styles/cardMedia/cover';
 import { Row, Item } from '@mui-treasury/components/flex';
-import Button from '@material-ui/core/Button';
-import CardActions from '@material-ui/core/CardActions';
 
 
 const useGridStyles = makeStyles(({ breakpoints }) => ({
@@ -149,9 +147,9 @@ const CustomCard = ({ styles, cover, logo, title, date }) => {
 };
 
 export const HighlightCardDemo = React.memo(function HighlightCard() {
-  const styles1 = useStyles({ color: '#deb992' });
-  const styles2 = useStyles({ color: '#4051b5' });
-  const styles3 = useStyles({ color: '#F08080' });
+  const stylesCovid = useStyles({ color: '#deb992' });
+  const stylesNews = useStyles({ color: '#4051b5' });
+  const stylesDashboard = useStyles({ color: '#d40f00' });
 
 
 
@@ -173,7 +171,7 @@ export const HighlightCardDemo = React.memo(function HighlightCard() {
       >
         <Grid item onClick={event =>  window.location.href='https://www.covidpostcode.com'} >
           <CustomCard
-            styles={styles1}
+            styles={stylesCovid}
             date={'View Website'}
             cover={'images/portfolio/covid/covid5.png'}
             logo={'images/portfolio/covid/logo512.png'}
@@ -183,34 +181,21 @@ export const HighlightCardDemo = React.memo(function HighlightCard() {
         </Grid>
         <Grid item onClick={event =>  window.location.href='https://murmuring-castle-67752.herokuapp.com/'} >
           <CustomCard
-
-
-          styles={styles2}
+            styles={stylesNews}
             date={'View Website'}
             cover={'images/portfolio/news/news.png'}
             logo={'images/portfolio/news/logo.png'}
-            title={
-              <>
-                Global News Application
-                <br />
-              </>
-            }
+            title={<div>Global News Application </div>}
           />
         </Grid>
         <Grid item>
           <CustomCard
-            styles={styles3}
+            styles={stylesDashboard}
             date={'View Project'}
-            cover={
-              'https://cdn.vox-cdn.com/thumbor/C6_-SDnnoFdS19XRH4XvAYN1BT8=/148x0:1768x1080/1400x1400/filters:focal(148x0:1768x1080):format(jpeg)/cdn.vox-cdn.com/uploads/chorus_image/image/49641465/tracer_overwatch.0.0.jpg'
-            }
-            logo={'https://d3fa68hw0m2vcc.cloudfront.net/bf4/156511609.jpeg'}
-            title={
-              <>
-                Astronomy Binoculars
-                <br />A Great Alternative
-              </>
-            }
+            cover={'images/portfolio/bidashboard/dashboardbackground.png'}
+            logo={'images/portfolio/bidashboard/inflectologo.png'}
+            title={<div>Business Insights Platform</div>}
+
           />
         </Grid>
 
