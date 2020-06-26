@@ -10,6 +10,8 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Grid from '@material-ui/core/Grid';
 import { useCoverCardMediaStyles } from '@mui-treasury/styles/cardMedia/cover';
 import { Row, Item } from '@mui-treasury/components/flex';
+import Button from '@material-ui/core/Button';
+import CardActions from '@material-ui/core/CardActions';
 
 
 const useGridStyles = makeStyles(({ breakpoints }) => ({
@@ -51,6 +53,7 @@ const useStyles = makeStyles(({ palette }) => ({
       bottom: 0,
     },
     '&:hover': {
+      cursor: 'pointer',
       '&:before': {
         bottom: -6,
         right: -6,
@@ -112,13 +115,14 @@ const useStyles = makeStyles(({ palette }) => ({
     color: '#fff',
     backgroundColor: palette.text.hint,
     opacity: 0,
-    fontSize: '2rem',
-    padding: '0.25rem 0.5rem',
+    fontSize: '2.5rem',
+    padding: '0.4rem 2rem',
     borderRadius: 12,
+    alignContent: "center"
   },
 }));
 
-const CustomCard = ({ styles, cover, logo, title, brand, date }) => {
+const CustomCard = ({ styles, cover, logo, title, date }) => {
   const mediaStyles = useCoverCardMediaStyles();
   return (
     <Box className={cx(styles.root, styles.color)} pt={20}>
@@ -134,10 +138,7 @@ const CustomCard = ({ styles, cover, logo, title, brand, date }) => {
             </Item>
           </Row>
           <Row mt={4} alignItems={'center'}>
-            <Item>
-              <div className={styles.team}>{brand}</div>
-            </Item>
-            <Item position={'right'}>
+            <Item position={'center'}>
               <div className={styles.date}>{date}</div>
             </Item>
           </Row>
@@ -149,53 +150,49 @@ const CustomCard = ({ styles, cover, logo, title, brand, date }) => {
 
 export const HighlightCardDemo = React.memo(function HighlightCard() {
   const styles1 = useStyles({ color: '#deb992' });
-  const styles2 = useStyles({ color: '#5357ce' });
+  const styles2 = useStyles({ color: '#4051b5' });
   const styles3 = useStyles({ color: '#F08080' });
+
+
 
   const gridStyles = useGridStyles();
   return (
     <>
+      <h2 align='center'> Previous Projects</h2>
       <NoSsr>
         <GoogleFontLoader
           fonts={[{ font: 'Fjalla One' }, { font: 'Sen', weights: [500] }]}
         />
       </NoSsr>
       <Grid
-        style={{ padding: 16 }}
+        style={{ padding: 20 }}
         classes={gridStyles}
         wrap={'nowrap'}
         container
         spacing={4}
       >
-        <Grid item>
+        <Grid item onClick={event =>  window.location.href='https://www.covidpostcode.com'} >
           <CustomCard
             styles={styles1}
-            brand={'Overwatch Official'}
-            date={'Read more'}
+            date={'View Website'}
             cover={'images/portfolio/covid/covid5.png'}
             logo={'images/portfolio/covid/logo512.png'}
-            title={
-              <>
-                Covid-19 UK Postcode Search
-              </>
+            title={<div>Covid-19 UK Postcode Search</div>
             }
           />
         </Grid>
-        <Grid item>
+        <Grid item onClick={event =>  window.location.href='https://murmuring-castle-67752.herokuapp.com/'} >
           <CustomCard
-            styles={styles2}
-            brand={'League of Legends'}
-            date={'Read more'}
-            cover={
-              'https://www.pcclean.io/wp-content/uploads/2019/04/559308.jpg'
-            }
-            logo={
-              'https://vignette.wikia.nocookie.net/youtube/images/7/77/LeagueOfLegends.jpg/revision/latest?cb=20180718040905'
-            }
+
+
+          styles={styles2}
+            date={'View Website'}
+            cover={'images/portfolio/news/news.png'}
+            logo={'images/portfolio/news/logo.png'}
             title={
               <>
-                Astronomy Binoculars
-                <br />A Great Alternative
+                Global News Application
+                <br />
               </>
             }
           />
@@ -203,8 +200,7 @@ export const HighlightCardDemo = React.memo(function HighlightCard() {
         <Grid item>
           <CustomCard
             styles={styles3}
-            brand={'Overwatch Official'}
-            date={'Read more'}
+            date={'View Project'}
             cover={
               'https://cdn.vox-cdn.com/thumbor/C6_-SDnnoFdS19XRH4XvAYN1BT8=/148x0:1768x1080/1400x1400/filters:focal(148x0:1768x1080):format(jpeg)/cdn.vox-cdn.com/uploads/chorus_image/image/49641465/tracer_overwatch.0.0.jpg'
             }
