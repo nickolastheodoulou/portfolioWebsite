@@ -188,10 +188,10 @@ export const HighlightCardDemo = React.memo(function HighlightCard() {
             title={<div>Global News Application </div>}
           />
         </Grid>
-        <Grid item>
+        <Grid item onClick={event =>  window.location.href='https://www.inflectomedia.com/'} >
           <CustomCard
             styles={stylesDashboard}
-            date={'View Project'}
+            date={'Project Page Coming Soon'}
             cover={'images/portfolio/bidashboard/dashboardbackground.png'}
             logo={'images/portfolio/bidashboard/inflectologo.png'}
             title={<div>Business Insights Platform</div>}

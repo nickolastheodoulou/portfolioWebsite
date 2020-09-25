@@ -1,10 +1,8 @@
-
-
 let resumeData = {
   "name": "Nick Theodoulou",
   "linkedinId":"Your LinkedIn Id",
   "skypeid": "Your skypeid",
-  "roleDescription": "I'm a website developer. I spend my days crafting websites, telling stories with data and combining the two to create web apps that make predictions use machine learning.",
+  "roleDescription": "I'm a website developer and data analyst with marketing experience. I spend my days crafting websites, telling stories with data and combining the two to create unique web apps.",
   "socialLinks":[
     {"name":"linkedin",
       "url":"https://www.linkedin.com/in/nickolastheodoulou/",
@@ -27,7 +25,7 @@ let resumeData = {
       "specialization":"MSci in Theoretical Physics ",
       "MonthOfPassing":"Sep. 2014 - ",
       "YearOfPassing":"Jun. 2018",
-      "Achievements":"Awarded a first Class"
+      "Achievements":"Awarded a First Class"
     }
   ],
   "work":[
@@ -36,36 +34,30 @@ let resumeData = {
       "specialization":"Senior Technical Operations Executive",
       "MonthOfLeaving":"Dec 2019 - ",
       "YearOfLeaving":"PRESENT",
-      "Achievements":
-        "• Lead on fraud detection. Constantly researching, analysing and removing fraudulent advertising traffic sources using both third-party tools\n" +
-        "and custom-built Python Scripts. This has saved thousands of dollars in advertising costs." +
-        "• Hiring, training and supervising a Data Analyst Intern currently on a 12-month placement who has excelled at the role. This has enabled me\n" +
-        "to manage and produce long-term projects." +
-        " • Took the lead role on Designing, engineering and developing a full-stack business insights platform on AWS for Inflecto Media using services\n" +
-        "such as EC2, S3, Athena and QuickSight."
+      "Achievements1": "Lead on fraud detection. Constantly researching, analysing and removing fraudulent advertising traffic sources using both third-party tools and custom-built Python Scripts. This has saved thousands of dollars in advertising costs.",
+      "Achievements2": "Hiring, training and supervising a Data Analyst Intern currently on a 12-month placement who has excelled at the role. This has enabled me to manage and produce long-term projects.",
+      "Achievements3": "Took the lead role on Designing, engineering and developing a full-stack business insights platform on AWS for Inflecto Media using services such as EC2, S3, Athena and QuickSight."
     },
     {
       "CompanyName":"Inflecto Media",
       "specialization":"Technical Operations Executive",
       "MonthOfLeaving":"Dec 2018 - ",
       "YearOfLeaving":"Dec 2019",
-      "Achievements":
-        "• Streamlined manual reporting across numerous department from Microsoft Excel to a Business Insight Dashboard on AWS. Currently saving" +
-        "countless hours processing data allowing team members to focus on long term business strategies. " +
-        "• Conducting numerous training sessions to the wider team on numerous technical topics such as advertising tracking, mobile advertising attribution and mobile advertising fraud. This has given me extensive experience in explaining technical ideas to non-technical audiences." +
-        "• Creating, maintaining and nourishing relationships with industry thought leaders that have improved our product."
+      "Achievements1": "Streamlined manual reporting across numerous department from Microsoft Excel to a Business Insight Dashboard on AWS. Currently saving countless hours processing data allowing team members to focus on long term business strategies.",
+      "Achievements2": "Conducting numerous training sessions to the wider team on numerous technical topics such as advertising tracking, mobile advertising attribution and mobile advertising fraud. This has given me extensive experience in explaining technical ideas to non-technical audiences.",
+      "Achievements3": "Creating, maintaining and nourishing relationships with industry thought leaders that have improved our product."
     }
   ],
-  "skillsDescription":"Programming Skills",
+  "skillsDescription":" ",
   "skills":[
-    {
-      "skillname":"Reactjs"
-    },
     {
       "skillname":"Python"
     },
     {
       "skillname":"Reactjs"
+    },
+    {
+      "skillname":"AWS"
     }
   ],
   "testimonials":[
