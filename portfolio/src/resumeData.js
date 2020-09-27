@@ -19,10 +19,17 @@ let resumeData = {
     {"name":"bitcoin",
       "url":"https://coinrequest.io/request/6nuwTyHRmOkK73M/",
       "className":"fa fa-bitcoin"
+    },
+    {"name":"envelope",
+      "url":"mailto:nickolastheodoulou@hotmail.com?subject=Question For Nick Theodoulou",
+      "className":"fa fa-envelope"
     }
   ],
 
-  "aboutme":"My background is in Theoretical Physics having completed my First Class masters in July 2018. I currently work full-time in TechOps for a Digital Marketing company. For my role, I specialize in data analysis, automating reports and providing tech insight to drive deep and meaningful business solutions. I’m constantly learning new tools and technologies, currently focusing on UX, UI and using AWS for back end web development. I’m a skilled in many areas of programming and design.",
+  "aboutme":{"paragraph1": "I'm a Full Stack Developer. My background is in Theoretical Physics having completed my First Class masters in July 2018. I currently work full-time in the UK Water industry as a Full Stack Developer developing our proprietary billing software. For my role, I work across the full stack, from working on the front end build using React to improve the UX and UI to using PostgreSQL to add new data analysis tools in the backend. This provides our clients advanced data analysis tools to drive deep into the data and meaningful business solutions that would otherwise not be possible using traditional tools Such as Microsoft Excel. ",
+    "paragraph2": "I’m constantly learning new tools and technologies, currently focusing on UX, UI and using AWS for back end web development. I’m a skilled in many areas of programming and design, having recently developed an interest in Crypto currencies, blockchain technologies and the programming language Solidity.\n",
+    "paragraph3": "When I’m not developing, I spend my time reading, weightlifting and traveling. I enjoy visiting different parts of the world and experiencing the wide range of cultures the world has to offer."
+  },
   "address":"London",
   "email":"<a href=\"mailto:someone@yoursite.com\">Email Us</a>",
   "education":[

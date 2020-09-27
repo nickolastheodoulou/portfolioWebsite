@@ -3,17 +3,30 @@ import React, { Component } from 'react';
 export default class About extends Component {
   render() {
     let resumeData = this.props.resumeData;
-    return (
-      <section id="about">
-        <div className="row">
-          <div className="three columns">
-            <img className="profile-pic"  src="images/profilepic2.png" alt="Profile" />
-          </div>
-          <div className="nine columns main-col">
-            <h2>About Me</h2>
-            <p>{resumeData.aboutme} </p>
 
+
+    const profilePic = {
+      height:"auto",
+      maxWidth: "90%",
+      width:"auto"
+    }
+
+
+    return (
+      <section id="about" style={{background: "#eeedeb",   overflow: "auto"}}>
+        <div className="row item">
+
+          <div className="six columns main-col">
+            <h1 style={{color: "black"}}>About Me.</h1>
+            <p style={{color: "black"}}>{resumeData.aboutme.paragraph1} </p>
+            <p style={{color: "black"}}>{resumeData.aboutme.paragraph2} </p>
+            <p style={{color: "black"}}>{resumeData.aboutme.paragraph3} </p>
           </div>
+
+          <div className="six columns main-col">
+            <img style={profilePic} src="images/profilepic2.png" alt="Profile"/>
+          </div>
+
         </div>
       </section>
     );

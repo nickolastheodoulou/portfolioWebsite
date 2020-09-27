@@ -9,8 +9,7 @@ export default class ContactUs extends Component {
       position: 'absolute',
       left: '50%',
       marginLeft: '-50px',
-      marginTop:'-40px',
-
+      display:"block"
     };
     return (
       <section id="contact">
