@@ -52,7 +52,7 @@ header .banner {
    vertical-align: middle;
    margin: 0 auto;
    width: 85%;
-   padding-bottom: 30px;s
+   padding-bottom: 30px;
    text-align: center;
 }
 
@@ -289,7 +289,7 @@ ul#nav li.current a { color: #F06000; }
 	width: 95%;
 	float: left;
 	padding: 0;
-	text-align: left;
+   text-align: left;
 }
 .bars .skills {
   	margin-top: 36px;
@@ -315,31 +315,49 @@ ul#nav li.current a { color: #F06000; }
    position: absolute;
    left: 0;
    top: 0;
-
    margin: 0;
    padding-right: 24px;
-  	background: #313131;
+  	background: #10abb0;
    display: inline-block;
   	height: 42px;
    line-height: 42px;
    border-radius: 3px 0 0 3px;
+    -moz-animation: 5s ease;
+    -webkit-animation: 5s ease;
 }
 
 
 .python {
-  	width: 90%;
-  	-moz-animation: python 2s ease;
-  	-webkit-animation: python 2s ease;
+  	-moz-animation: python 5s ease;
+  	-webkit-animation: python 5s ease;
 }
-.reactjs {
-  	width: 70%;
-  	-moz-animation: reactjs 2s ease;
-  	-webkit-animation: reactjs 2s ease;
+.react {
+  	-moz-animation: reactjs 5s ease;
+  	-webkit-animation: reactjs 5s ease;
 }
 .aws {
-  	width: 50%;
-  	-moz-animation: aws 2s ease;
-  	-webkit-animation: aws 2s ease;
+  	-moz-animation: aws 5s ease;
+  	-webkit-animation: aws 5s ease;
+}
+.sql {
+   -moz-animation: aws 5s ease;
+   -webkit-animation: aws 5s ease;
+}
+.html {
+   -moz-animation: aws 5s ease;
+   -webkit-animation: aws 5s ease;
+}
+.css {
+   -moz-animation: aws 5s ease;
+   -webkit-animation: aws 5s ease;
+}
+.javascript {
+   -moz-animation: aws 5s ease;
+   -webkit-animation: aws 5s ease;
+}
+.node\.js {
+   -moz-animation: aws 5s ease;
+   -webkit-animation: aws 5s ease;
 }
 
 @-moz-keyframes python {
