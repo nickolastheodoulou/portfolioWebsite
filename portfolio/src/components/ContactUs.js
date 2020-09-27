@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import ContactForm from "./ContactForm";
 
 export default class ContactUs extends Component {
   render() {
@@ -8,28 +8,47 @@ export default class ContactUs extends Component {
     const divStyle = {
       position: 'absolute',
       left: '50%',
-      marginLeft: '-50px',
-      display:"block"
+      marginLeft: "-7%",
+      display:"block",
+      alignContent:"center"
     };
+
+    const formStyle = {
+      position: 'center',
+      display:"block",
+      maxWidth:"70%",
+      marginLeft: "auto",
+      marginRight: "auto"
+    };
+
     return (
       <section id="contact">
+        <br/>
+        <h2 align={"center"}>Contact Details</h2>
+        <br/>
+        <br/>
+        <div style={formStyle}>
+          <ContactForm/>
+        </div>
+
         <div style={divStyle}>
 
-          <h4>Contact Details</h4>
           <p className="address">
-            <span>{resumeData.name}</span>
-            <br></br>
+            <span>
+              Or email me <a href="mailto:nickolastheodoulou@hotmail.com?subject=Question From Portfolio Website">Here</a>
+            </span>
+            <br/>
+            <span>
+              nickolastheodoulou@hotmail.com
+            </span>
+            <br/>
             <span>{resumeData.address}
             </span>
-            <br></br>
-            <span>
-              <a href="mailto:nickolastheodoulou@hotmail.com?subject=Question From Portfolio Website">Email Me Here</a>
-            </span>
+            <br/>
           </p>
         </div>
-        <br></br>
-        <br></br>
-        <br></br>
+        <br/>
+        <br/>
 
       </section>
 
