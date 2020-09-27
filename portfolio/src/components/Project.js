@@ -150,6 +150,7 @@ export const HighlightCardDemo = React.memo(function HighlightCard() {
   const stylesCovid = useStyles({ color: '#deb992' });
   const stylesNews = useStyles({ color: '#4051b5' });
   const stylesDashboard = useStyles({ color: '#d40f00' });
+  const stylesPortfolio = useStyles({ color: '#D8205F' });
 
 
 
@@ -188,17 +189,24 @@ export const HighlightCardDemo = React.memo(function HighlightCard() {
             title={<div>Global News Application </div>}
           />
         </Grid>
-        <Grid item>
+        <Grid item onClick={event =>  window.location.href='https://www.inflectomedia.com/'} >
           <CustomCard
             styles={stylesDashboard}
-            date={'View Project'}
+            date={'Project Page Coming Soon'}
             cover={'images/portfolio/bidashboard/dashboardbackground.png'}
             logo={'images/portfolio/bidashboard/inflectologo.png'}
             title={<div>Business Insights Platform</div>}
-
           />
         </Grid>
-
+        <Grid item onClick={event =>  window.location.href='https://callieames.com/'} >
+          <CustomCard
+            styles={stylesPortfolio}
+            date={'View Website'}
+            cover={'images/portfolio/portfolio/portfolioBackground.png'}
+            logo={'images/portfolio/portfolio/callieLogo.png'}
+            title={<div>Artist Portfolio</div>}
+          />
+        </Grid>
       </Grid>
     </>
   );
