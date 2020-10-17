@@ -95,7 +95,7 @@ header .social li {
    padding: 0;
 }
 header .social li a { color: #fff; }
-header .social li a:hover { color: #11ABB0; }
+header .social li a:hover { color: #f37a24; }
 
 /* scrolldown link */
 header .scrolldown a {
@@ -759,7 +759,7 @@ call-to-action .button {
 #contact {
    background: #ffffff;
    padding-top: 1rem;
-   padding-bottom: 10rem;
+   padding-bottom: 1rem;
    color: black;
 }
 #contact .section-head { margin-bottom: 42px; }

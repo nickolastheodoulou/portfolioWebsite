@@ -6,11 +6,7 @@ export default class ContactUs extends Component {
     let resumeData = this.props.resumeData;
 
     const divStyle = {
-      position: 'absolute',
-      left: '50%',
-      marginLeft: "-7%",
-      display:"block",
-      alignContent:"center"
+      textAlign: "center"
     };
 
     const formStyle = {
@@ -18,14 +14,13 @@ export default class ContactUs extends Component {
       display:"block",
       maxWidth:"70%",
       marginLeft: "auto",
-      marginRight: "auto"
+      marginRight: "auto",
+      textAlign: "center"
     };
 
     return (
       <section id="contact">
-        <br/>
         <h2 align={"center"}>Contact Details</h2>
-        <br/>
         <br/>
         <div style={formStyle}>
           <ContactForm/>
@@ -35,21 +30,13 @@ export default class ContactUs extends Component {
 
           <p className="address">
             <span>
-              Or email me <a href="mailto:nickolastheodoulou@hotmail.com?subject=Question From Portfolio Website">Here</a>
-            </span>
-            <br/>
-            <span>
-              nickolastheodoulou@hotmail.com
+              Or email me <a href="mailto:nickolastheodoulou@hotmail.com?subject=Question From Portfolio Website">here</a>
             </span>
             <br/>
             <span>{resumeData.address}
             </span>
-            <br/>
           </p>
         </div>
-        <br/>
-        <br/>
-
       </section>
 
     );

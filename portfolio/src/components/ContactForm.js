@@ -4,6 +4,19 @@
 
 import React from "react";
 
+const labelStyle = {
+  display: "inline-block",
+  textAlign: "center",
+  color:"black"};
+
+const buttonStyle = {
+    width: "140px"
+  }
+
+  const divStyle = {
+    textAlign: "center"
+  }
+
 export default class MyForm extends React.Component {
   constructor(props) {
     super(props);
@@ -13,6 +26,8 @@ export default class MyForm extends React.Component {
     };
   }
 
+  
+
   render() {
     const { status } = this.state;
     return (
@@ -21,12 +36,14 @@ export default class MyForm extends React.Component {
         action="https://formspree.io/meqpoedy"
         method="POST"
       >
-        <label style={{color:"black"}}>Email:</label>
+        <label style={labelStyle}>Email:</label>
         <input type="email" name="email" />
-        <label style={{color:"black"}}>Message:</label>
+        <label style={labelStyle}>Message:</label>
         <input type="text" name="message" />
-        {status === "SUCCESS" ? <p>Thanks!</p> : <button>Submit</button>}
+        <div style ={divStyle}>
+        {status === "SUCCESS" ? <p>Thanks!</p> : <button style={buttonStyle}>Submit</button>}
         {status === "ERROR" && <p>Ooops! There was an error.</p>}
+        </div>
       </form>
     );
   }

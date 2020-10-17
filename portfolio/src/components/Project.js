@@ -113,7 +113,7 @@ const useStyles = makeStyles(({ palette }) => ({
     color: '#fff',
     backgroundColor: palette.text.hint,
     opacity: 0,
-    fontSize: '2.5rem',
+    fontSize: '2.0rem',
     padding: '0.4rem 2rem',
     borderRadius: 12,
     alignContent: "center"
@@ -170,6 +170,15 @@ export const HighlightCardDemo = React.memo(function HighlightCard() {
         container
         spacing={4}
       >
+        <Grid item onClick={event =>  window.location.href='https://callieames.com/'} >
+          <CustomCard
+            styles={stylesPortfolio}
+            date={'View Website'}
+            cover={'images/portfolio/portfolio/portfolioBackground.png'}
+            logo={'images/portfolio/portfolio/callieLogo.png'}
+            title={<div>Artist Portfolio</div>}
+          />
+        </Grid>
         <Grid item onClick={event =>  window.location.href='https://www.covidpostcode.com'} >
           <CustomCard
             styles={stylesCovid}
@@ -198,15 +207,7 @@ export const HighlightCardDemo = React.memo(function HighlightCard() {
             title={<div>Business Insights Platform</div>}
           />
         </Grid>
-        <Grid item onClick={event =>  window.location.href='https://callieames.com/'} >
-          <CustomCard
-            styles={stylesPortfolio}
-            date={'View Website'}
-            cover={'images/portfolio/portfolio/portfolioBackground.png'}
-            logo={'images/portfolio/portfolio/callieLogo.png'}
-            title={<div>Artist Portfolio</div>}
-          />
-        </Grid>
+      
       </Grid>
     </>
   );

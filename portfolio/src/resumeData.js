@@ -1,3 +1,6 @@
+import { faBitcoin, faGithub, faInstagram, faLinkedin, faMedium } from '@fortawesome/free-brands-svg-icons'
+
+
 let resumeData = {
   "name": "Nick Theodoulou",
   "linkedinId":"Your LinkedIn Id",
@@ -6,24 +9,28 @@ let resumeData = {
   "socialLinks":[
     {"name":"linkedin",
       "url":"https://www.linkedin.com/in/nickolastheodoulou/",
-      "className":"fa fa-linkedin"
+      "className":faLinkedin
     },
     {"name":"github",
       "url":"https://github.com/nickolastheodoulou",
-      "className":"fa fa-github"
+      "className":faGithub
+    },
+    {"name":"medium",
+      "url":"https://medium.com/@nickolastheodoulou",
+      "className":faMedium
     },
     {"name":"instagram",
       "url":"https://www.instagram.com/nick_the_o/",
-      "className":"fa fa-instagram"
+      "className": faInstagram
     },
     {"name":"bitcoin",
-      "url":"https://coinrequest.io/request/6nuwTyHRmOkK73M/",
-      "className":"fa fa-bitcoin"
+    "url":"https://coinrequest.io/request/6nuwTyHRmOkK73M/",
+    "className":faBitcoin
     },
-    {"name":"envelope",
-      "url":"mailto:nickolastheodoulou@hotmail.com?subject=Question For Nick Theodoulou",
-      "className":"fa fa-envelope"
-    }
+    // {"name":"envelope",
+    //   "url":"mailto:nickolastheodoulou@hotmail.com?subject=Question For Nick Theodoulou",
+    //   "className": faEnvelope
+    // }
   ],
 
   "aboutme":{"paragraph1": "I'm a Full Stack Developer. My background is in Theoretical Physics having completed my First Class masters in July 2018. I currently work full-time in the UK Water industry as a Full Stack Developer developing our proprietary billing software. For my role, I work across the full stack, from working on the front end build using React to improve the UX and UI to using PostgreSQL to add new data analysis tools in the backend. This provides our clients advanced data analysis tools to drive deep into the data and meaningful business solutions that would otherwise not be possible using traditional tools Such as Microsoft Excel. ",

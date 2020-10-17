@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 export default class Footer extends Component {
   render() {
     let resumeData = this.props.resumeData;
@@ -10,9 +12,9 @@ export default class Footer extends Component {
             {
               resumeData.socialLinks && resumeData.socialLinks.map((item)=>{
                 return(
-                  <li>
+                  <li key={item.name}> 
                     <a href={item.url}>
-                    <i className={item.className} />
+                      <FontAwesomeIcon icon={item.className} />
                     </a>
                   </li>
                 )

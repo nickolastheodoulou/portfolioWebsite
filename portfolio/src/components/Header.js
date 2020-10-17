@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 export default class Header extends Component {
   render() {
     let resumeData = this.props.resumeData;
@@ -14,6 +17,7 @@ export default class Header extends Component {
               <li><a className="smoothscroll" href="#resume">Resume</a></li>
               {/*<li><a className="smoothscroll" href="#testimonials">Testimonials</a></li>*/}
               <li><a className="smoothscroll" href="#about">About</a></li>
+              <li><a href="https://medium.com/@nickolastheodoulou">Articles</a></li>
               <li><a className="smoothscroll" href="#contact">Contact</a></li>
             </ul>
           </nav>
@@ -25,14 +29,18 @@ export default class Header extends Component {
               <hr/>
               <ul className="social">{resumeData.socialLinks && resumeData.socialLinks.map(item =>{
                 return(
-                  <li key={item.name}> <a href={item.url} target="_blank"> <i className={item.className}></i></a> </li>
+                  <li key={item.name}> 
+                    <a href={item.url}>
+                      <FontAwesomeIcon icon={item.className} />
+                    </a>
+                  </li>
                 )}
               )}</ul>
             </div>
           </div>
 
           <p className="scrolldown">
-            <a className="smoothscroll" href="#about"><i className="icon-down-circle"></i></a>
+            <a className="smoothscroll" href="#contact"><i className="icon-down-circle"></i></a>
           </p>
 
         </header>
