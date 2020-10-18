@@ -33,6 +33,10 @@ export default class ContactUs extends Component {
               Or email me <a href="mailto:nickolastheodoulou@hotmail.com?subject=Question From Portfolio Website">here</a>
             </span>
             <br/>
+            <span>
+              nickolastheodoulou@hotmail.com
+            </span>
+            <br/>
             <span>{resumeData.address}
             </span>
           </p>
