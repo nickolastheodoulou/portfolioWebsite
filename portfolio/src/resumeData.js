@@ -5,7 +5,7 @@ let resumeData = {
   "name": "Nick Theodoulou",
   "linkedinId":"Your LinkedIn Id",
   "skypeid": "Your skypeid",
-  "roleDescription": "I'm a Full Stack Developer with Data Analysis and Marketing Experience. My experties is to craft websites, tell stories with data and combining the two to create unique web apps.",
+  "roleDescription": `I'm a Full Stack Developer in the Utilities Industry. My expertise involves crafting websites, telling stories with data and combining the two to create unique web apps.`,
   "socialLinks":[
     {"name":"linkedin",
       "url":"https://www.linkedin.com/in/nickolastheodoulou/",
@@ -54,9 +54,9 @@ let resumeData = {
       "specialization":"Full Stack Developer",
       "MonthOfLeaving":"Sep 2020 - ",
       "YearOfLeaving":"PRESENT",
-      "Achievements1": "I am currently developing our proprietary billing software used for over 30% of Businesses in the UK water industry.",
-      "Achievements2": "Development new features across the full stack, which includes React, postgresSQL, Express and Node.js." 
-
+      "Achievements1": "Designing, engineering and developing core products used by Valytica’s existing clients across the full stack using ReactJS,node,Postgres and GrapQL. Integration tests are written using Jest ensuring the new tools are reliable.",
+      "Achievements2": "One example is a tool that allows us to send custom business insights, graphs and custom alerts via our application to provide key insights to various stakeholders.",
+      "Achievements3": "Significant enhancements across the fullstack to one of our existing DataQuality tools turning it into a full product. It allows users to compare data sets (imported via sftp in our product) using custom SQL scripts ensuring data is accurate and updated. I focused on significant enhancements to the front‐end improving the UI and UX."
     },
     {
       "CompanyName":"Inflecto Media",
@@ -80,43 +80,40 @@ let resumeData = {
   "skillsDescription":" ",
   "skills":[
     {
-      "skillname":"React",
-      "experience":"80%"
+      "skillname":"JavaScript",
+      "experience":"90%"
     },
     {
-      "skillname":"Python",
+      "skillname":"React",
       "experience":"90%"
-
     },
     {
       "skillname":"HTML",
       "experience":"90%"
-
+    },
+    {
+      "skillname":"Node.js",
+      "experience":"80%"
     },
     {
       "skillname":"CSS",
       "experience":"70%"
-
     },
     {
-      "skillname":"JavaScript",
+      "skillname":"Python",
       "experience":"70%"
-
     },
     {
       "skillname":"SQL",
-      "experience":"50%"
-
+      "experience":"65%"
     },
     {
-      "skillname":"Node.js",
+      "skillname":"Docker",
       "experience":"50%"
-
     },
     {
       "skillname":"AWS",
       "experience":"50%"
-
     }
   ],
   "testimonials":[
@@ -130,5 +127,5 @@ let resumeData = {
     }
   ]
   }
-  
+
   export default resumeData

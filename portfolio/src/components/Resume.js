@@ -27,7 +27,7 @@ export default  class Resume extends Component {
             </div>
           </div>
         </div>
-        
+
 
         <div className="row work">
           <div className="three columns header-col">
@@ -53,7 +53,6 @@ export default  class Resume extends Component {
                         <p>
                           {item.Achievements3}
                         </p>
-
                       </p>
                     </div>
                   </div>
@@ -90,7 +89,7 @@ export default  class Resume extends Component {
           </div>
         </div>
 
-        
+
       </section>
     );
   }

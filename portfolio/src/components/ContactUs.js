@@ -20,26 +20,10 @@ export default class ContactUs extends Component {
 
     return (
       <section id="contact">
-        <h2 align={"center"}>Contact Details</h2>
+        <h2 style={{paddingTop: '10px'}} align={"center"}>Contact Me</h2>
         <br/>
         <div style={formStyle}>
           <ContactForm/>
-        </div>
-
-        <div style={divStyle}>
-
-          <p className="address">
-            <span>
-              Or email me <a href="mailto:nickolastheodoulou@hotmail.com?subject=Question From Portfolio Website">here</a>
-            </span>
-            <br/>
-            <span>
-              nickolastheodoulou@hotmail.com
-            </span>
-            <br/>
-            <span>{resumeData.address}
-            </span>
-          </p>
         </div>
       </section>
 
