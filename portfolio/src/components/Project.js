@@ -151,6 +151,7 @@ export const HighlightCardDemo = React.memo(function HighlightCard() {
   const stylesNews = useStyles({ color: '#4051b5' });
   const stylesDashboard = useStyles({ color: '#d40f00' });
   const stylesPortfolio = useStyles({ color: '#D8205F' });
+  const binancePortfolio = useStyles({ color: '#1f2d3f' });
 
 
 
@@ -170,6 +171,15 @@ export const HighlightCardDemo = React.memo(function HighlightCard() {
         container
         spacing={4}
       >
+        <Grid item onClick={event =>  window.location.href='https://l.linklyhq.com/l/aK9j'} >
+          <CustomCard
+            styles={binancePortfolio}
+            date={'View Website'}
+            cover={'images/portfolio/crypto/binance-dashboard.png'}
+            logo={'images/portfolio/crypto/binance-icon.png'}
+            title={<div>Binance Portfolio Tracker</div>}
+          />
+        </Grid>
         <Grid item onClick={event =>  window.location.href='https://callieames.com/'} >
           <CustomCard
             styles={stylesPortfolio}
@@ -207,7 +217,7 @@ export const HighlightCardDemo = React.memo(function HighlightCard() {
             title={<div>Business Insights Platform</div>}
           />
         </Grid>
-      
+
       </Grid>
     </>
   );
